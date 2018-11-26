@@ -1,0 +1,51 @@
+/* font-family: 'Righteous', cursive;
+font-family: 'Comfortaa', cursive;
+font-family: 'Muli', sans-serif; */
+
+body {
+    background: url("../images/blur-commuter-departure-1440px-fade.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.jumbotron {
+    background: url("../images/aircraft-airplane-business-1080px.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 50%;
+    border-radius: .5rem;
+}
+.card{
+    border-radius: .5rem;
+    border-color: #161827;
+}
+
+
+h1 {
+    /* Font-family: "Righteous", cursive; */
+    font-family: "Muli", sans-serif;;
+    font-weight: 300;
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #E0E0E8;
+}
+
+h2 {
+    font-family: "Comfortaa", cursive;
+    font-weight: 300;
+    font-size: 1.5rem;
+    /* color: #E0E0E8; */
+    color: rgb(220, 226, 248);
+    /* color: rgb(255, 0, 0) */
+}
+
+.card-header {
+    background: #161827;
+    color: white;
+    font-family: "Muli", sans-serif; 
+    font-weight: 300;
+}
+
+/* .whiteHr {
+    border-color: white;
+} */
