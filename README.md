@@ -1,2 +1,6 @@
-# Train_Schedule_Using_Firebase
-This application incorporates Firebase to host arrival and departure data. The app retrieves and manipulates information with Moment.js. This website provides up-to-date information about various trains, namely their arrival times and how many minutes remain until they arrive at their station.
+# Train Schedule
+This application incorporates Firebase to host hypothetical pasenger train data. The user inputs the name, destination, first triain arrival and it's frequency. Moment JS is used to calculate the time of the next train arival and how many minutes away it is.
+
+# Demo
+<img src="https://github.com/efinfl/Train_Schedule_Using_Firebase/blob/master/Train_Schedule_Demo.gif">
+
