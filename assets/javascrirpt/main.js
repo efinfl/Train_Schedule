@@ -17,7 +17,6 @@ $(document).ready(function () {
   // Time conversion variables
   // var timeFormat = "HH:mm"
 
-
   /* Sumit button is clicked to capture and send data to database */
   $("#submitTrain").on("click", function (event) {
 
@@ -42,10 +41,15 @@ $(document).ready(function () {
       destination: destination,
       firstTrain: firstTrain,
       frequency: frequency,
-      // nextArrival: nextArrival,
-      // minutesAway: minutesAway,
+      dateAdded: firebase.database.ServerValue.TIMESTAMP
     }
+    
     database.ref().push(newTrain);
+
+    $("#trainName").val("");
+    $("#destination").val("");
+    $("#firstTrain").val("");
+    $("#frequency").val("");
 
   });
 
@@ -89,7 +93,10 @@ $(document).ready(function () {
     );
     /* Generates rows by taking newRow varaibales above */
     $("#trainTable > tbody").append(newRow);
+  
+  
   });
+  
 
 
 });
