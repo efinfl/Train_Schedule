@@ -14,16 +14,11 @@ $(document).ready(function () {
 
   var database = firebase.database();
 
-  // Time conversion variables
-  // var timeFormat = "HH:mm"
-
   /* Sumit button is clicked to capture and send data to database */
   $("#submitTrain").on("click", function (event) {
 
 
     event.preventDefault();
-
-    console.log("Submit clicked");
 
     // Creates variables that hold the values from each filed
 
@@ -62,25 +57,19 @@ $(document).ready(function () {
 
     // Convert firstTrain time to the past
     var firstTrainNew = moment(firstTrain, "HH:mm").subtract(1, "year");
-    console.log("firstTrainNew: " + firstTrainNew);
 
     var currentTime = moment().format("hh:mm")
-    console.log("current Time Converted: " + currentTime)
 
     // Difference From now and firstTrain
     var nowFirstDiff = moment().diff(firstTrainNew, "minutes");
-    console.log("firstTrainDiff: " + nowFirstDiff)
 
     // Remainder of nowFirstDiff and frequency
     var remainder = nowFirstDiff % frequency;
-    console.log("Remainder" + remainder);
 
     // Minutes away
     var minutesAway = frequency - remainder;
-    console.log("Minutes Away: " + minutesAway);
 
     var nextArrival = moment().add(minutesAway, "minutes").format("HH:mm");
-    console.log("Next Arival: " + nextArrival);
 
     /* variable is created that places each of 
       those varaiables as table data in a table row */
